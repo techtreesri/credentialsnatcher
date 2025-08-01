@@ -1,0 +1,264 @@
+* {
+    border: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fafafa;
+    min-height: 100vh;
+}
+
+main {
+    margin: auto;
+    max-width: 935px;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Flex utility classes */
+
+.flex {
+    display: flex;
+}
+
+.direction-column {
+    flex-direction: column;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+/* Panel styling */
+
+.panel {
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* Layout sections */
+
+#auth {
+    max-width: 350px;
+}
+
+#mobile {
+    max-width: 454px;
+    margin-right: 20px;
+}
+
+#mobile img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Form styling */
+
+.login-with-fb,
+form {
+    width: 100%;
+}
+
+.register,
+form {
+    padding: 30px 20px;
+}
+
+.login-with-fb {
+    padding: 30px 20px 20px;
+}
+
+form .sr-only {
+    display: none;
+}
+
+form input {
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    color: #262626;
+    margin-bottom: 8px;
+    padding: 9px 10px;
+    width: 100%;
+    font-size: 14px;
+}
+
+form input::placeholder {
+    color: #8e8e8e;
+}
+
+form input:focus {
+    border-color: #808080;
+    outline: none;
+}
+
+form button {
+    background-color: #0095f6;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    height: 35px;
+    margin-top: 10px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+form button:hover {
+    background-color: #007cd1;
+}
+
+/* Separator line */
+
+.separator {
+    padding: 0 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.separator span {
+    background-color: #dbdbdb;
+    height: 1px;
+    flex: 1;
+}
+
+.separator .or {
+    color: #808080;
+    font-weight: bold;
+    margin: 0 10px;
+    font-size: 13px;
+}
+
+/* Login with Facebook */
+
+.login-with-fb a {
+    color: #385185;
+}
+
+.login-with-fb > a {
+    font-size: 12px;
+}
+
+.login-with-fb div a {
+    font-weight: bold;
+}
+
+.login-with-fb div {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Register section */
+
+.register * {
+    font-size: 14px;
+}
+
+.register a {
+    color: #0095f6;
+    font-weight: bold;
+}
+
+.register p {
+    margin-right: 5px;
+}
+
+/* App download */
+
+.app-download {
+    padding: 15px;
+}
+
+.app-download p {
+    padding: 10px 0;
+}
+
+.app-download img {
+    height: 40px;
+    margin: 0 5px;
+}
+
+/* Footer */
+
+footer {
+    margin: 0 auto 30px;
+    max-width: 935px;
+}
+
+footer ul {
+    margin-bottom: 20px;
+}
+
+footer ul li {
+    margin: 0 10px 10px;
+}
+
+footer ul li a {
+    color: #385185;
+}
+
+footer .copyright {
+    color: #808080;
+}
+
+footer ul li a,
+footer .copyright {
+    font-weight: bold;
+    text-align: center;
+    text-transform: none;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 767px) {
+    main {
+        flex-direction: column;
+        margin: 30px auto 50px auto;
+        padding: 0 20px;
+        height: auto;
+    }
+
+    #mobile {
+        display: none;
+    }
+
+    footer .copyright,
+    footer ul li a {
+        font-size: 13px;
+    }
+
+    .register,
+    form {
+        padding: 20px 10px;
+    }
+}

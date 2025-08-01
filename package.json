@@ -1,0 +1,25 @@
+{
+  "name": "insta-login-server",
+  "version": "1.0.0",
+  "description": "Backend server for handling login form submissions and sending email notifications.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "nodemailer": "^7.0.5"
+  },
+  "keywords": [
+    "express",
+    "nodemailer",
+    "login",
+    "backend"
+  ]
+}
